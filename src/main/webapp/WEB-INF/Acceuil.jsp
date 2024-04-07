@@ -36,7 +36,7 @@
                         <td>${employee.getDepartement()}</td>
                         <td>${employee.getPoste()}</td>
                         <td>
-                            <a href="#" class="btn btn-primary btn-sm">Modifier</a>
+                            <a href="modifier?id=${employee.getId()}" class="btn btn-primary btn-sm">Modifier</a>
                             <a href="afficher?id=${employee.getId()}" class="btn btn-danger btn-sm">Supprimer</a>
                         </td>
                     </tr>

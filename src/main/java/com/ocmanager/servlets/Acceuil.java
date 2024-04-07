@@ -2,8 +2,6 @@ package com.ocmanager.servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +16,7 @@ import com.employe.Employee;
 public class Acceuil extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	ArrayList<Employee> listemployee = new ArrayList<>();
+	static ArrayList<Employee> listemployee = new ArrayList<>();
 	
     public Acceuil() {
         super();
