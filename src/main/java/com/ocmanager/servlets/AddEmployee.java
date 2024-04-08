@@ -8,19 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/Ajouter")
-public class Ajouter extends HttpServlet {
+@WebServlet("/ajouterEmploye")
+public class AddEmployee extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 
-    public Ajouter() {
+    public AddEmployee() {
         super();
 
     }
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		this.getServletContext().getRequestDispatcher("/WEB-INF/Ajouter.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/AddEmployee.jsp").forward(request, response);
 	}
 
 

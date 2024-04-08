@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import com.employe.Employee;
 
 
-@WebServlet("/Acceuil")
-public class Acceuil extends HttpServlet {
+@WebServlet("/")
+public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	static ArrayList<Employee> listemployee = new ArrayList<>();
 	
-    public Acceuil() {
+    public Home() {
         super();
 
     }
@@ -26,9 +26,9 @@ public class Acceuil extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
-		listemployee.removeIf(em -> em.getId().equals(id));
+		listemployee.removeIf(emp -> emp.getId().equals(id));
 		request.setAttribute("emp", listemployee);
-		this.getServletContext().getRequestDispatcher("/WEB-INF/Acceuil.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
 	}
 
 	
@@ -38,20 +38,17 @@ public class Acceuil extends HttpServlet {
 		employee.setId(request.getParameter("id"));
 		
 		if(listemployee.stream().anyMatch(emp -> emp.getId().equals(employee.getId()))) {
-			
-        }
-        else {
-        	employee.setName(request.getParameter("name"));
-    		employee.setEmail(request.getParameter("email"));
-    		employee.setNumber(request.getParameter("number"));
-    		employee.setDepartement(request.getParameter("departement"));
-    		employee.setPoste(request.getParameter("poste"));
-    		listemployee.add(employee);
-	
-        }
-		request.setAttribute("emp", listemployee);
-		this.getServletContext().getRequestDispatcher("/WEB-INF/Acceuil.jsp").forward(request, response);
-		
-	}
+		    request.setAttribute("duplicateId", true);
+		} else {
+		    employee.setName(request.getParameter("nom"));
+		    employee.setEmail(request.getParameter("email"));
+		    employee.setNumber(request.getParameter("telephone"));
+		    employee.setDepartment(request.getParameter("departement"));
+		    employee.setJob(request.getParameter("poste"));
+		    listemployee.add(employee);
+		}
 
+		request.setAttribute("emp", listemployee);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
+	}
 }

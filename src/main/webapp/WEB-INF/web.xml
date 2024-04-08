@@ -2,30 +2,30 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
 
 <servlet>
-<servlet-name>Acceuil</servlet-name>
-<servlet-class>com.ocmanager.servlets.Acceuil</servlet-class>
+<servlet-name>Home</servlet-name>
+<servlet-class>com.ocmanager.servlets.Home</servlet-class>
 </servlet>
 <servlet-mapping>
-<servlet-name>Acceuil</servlet-name>
+<servlet-name>Home</servlet-name>
 <url-pattern>/</url-pattern>
 </servlet-mapping>
 
 <servlet>
-<servlet-name>Ajouter</servlet-name>
-<servlet-class>com.ocmanager.servlets.Ajouter</servlet-class>
+<servlet-name>AddEmployee</servlet-name>
+<servlet-class>com.ocmanager.servlets.AddEmployee</servlet-class>
 </servlet>
 <servlet-mapping>
-<servlet-name>Ajouter</servlet-name>
-<url-pattern>/ajouter</url-pattern>
+<servlet-name>AddEmployee</servlet-name>
+<url-pattern>/ajouterEmploye</url-pattern>
 </servlet-mapping>
 
 <servlet>
-<servlet-name>Modifier</servlet-name>
-<servlet-class>com.ocmanager.servlets.Modifier</servlet-class>
+<servlet-name>ModifyEmployee</servlet-name>
+<servlet-class>com.ocmanager.servlets.ModifyEmployee</servlet-class>
 </servlet>
 <servlet-mapping>
-<servlet-name>Modifier</servlet-name>
-<url-pattern>/modifier</url-pattern>
+<servlet-name>ModifyEmployee</servlet-name>
+<url-pattern>/modifierEmploye</url-pattern>
 </servlet-mapping>
 
 

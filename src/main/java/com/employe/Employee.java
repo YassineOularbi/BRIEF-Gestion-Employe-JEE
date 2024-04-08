@@ -6,8 +6,8 @@ public class Employee {
 	private String name;
 	private String email;
 	private String number;
-	private String departement;
-	private String poste;
+	private String department;
+	private String job;
 	
 	public Employee() {
 		
@@ -45,19 +45,19 @@ public class Employee {
 		this.number = number;
 	}
 
-	public String getDepartement() {
-		return departement;
+	public String getDepartment() {
+		return department;
 	}
 
-	public void setDepartement(String departement) {
-		this.departement = departement;
+	public void setDepartment(String department) {
+		this.department = department;
 	}
 
-	public String getPoste() {
-		return poste;
+	public String getJob() {
+		return job;
 	}
 	
-	public void setPoste(String poste) {
-		this.poste = poste;
+	public void setJob(String job) {
+		this.job = job;
 	}
 }
