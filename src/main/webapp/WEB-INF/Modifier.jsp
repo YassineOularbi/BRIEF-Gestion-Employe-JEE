@@ -10,19 +10,19 @@
  	<form method="post" action="modifier?id=${emp.getId()}">
 
             <label for="name">Name : </label>
-            <input type="text" name="name" id="name" placeholder="${emp.getId()}"/>
+            <input type="text" name="name" id="name" placeholder="${emp.getName()}"/>
             
             <label for="email">Email : </label>
-            <input type="email" name="email" id="email" placeholder="${emp.getId()}"/>
+            <input type="email" name="email" id="email" placeholder="${emp.getEmail()}"/>
             
             <label for="number">Phone Number : </label>
-            <input type="text" name="number" id="number" placeholder="${emp.getId()}"/>
+            <input type="text" name="number" id="number" placeholder="${emp.getNumber()}"/>
             
             <label for="departement">Departement : </label>
-            <input type="text" name="departement" id="departement" placeholder="${emp.getId()}"/>
+            <input type="text" name="departement" id="departement" placeholder="${emp.getDepartement()}"/>
             
             <label for="poste">Poste : </label>
-            <input type="text" name="poste" id="poste" placeholder="${emp.getId()}"/>
+            <input type="text" name="poste" id="poste" placeholder="${emp.getPoste()}"/>
           
             
             <input type="submit" />

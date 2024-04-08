@@ -30,8 +30,8 @@ public class Modifier extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String id = request.getParameter("id"); 
-		request.setAttribute("emp", Acceuil.listemployee.stream().filter(emp -> emp.getId().equals(id)).collect(Collectors.toList()).get(0));
+		String id = request.getParameter("id");
+		request.setAttribute("emp", Acceuil.listemployee.stream().filter(emp -> emp.getId().equals(id)).collect(Collectors.toList()));
 		this.getServletContext().getRequestDispatcher("/WEB-INF/Modifier.jsp").forward(request, response);
 	}
 
@@ -48,11 +48,21 @@ public class Modifier extends HttpServlet {
 		    
 		    for (Employee emp : Acceuil.listemployee){
 		    	if(emp.getId().equals(id)) {
-		    		emp.setName(name);
-		    		emp.setEmail(email);
-		    		emp.setNumber(phoneNumber);
-		    		emp.setDepartement(departement);
-		    		emp.setPoste(poste);
+		    		if(!name.isEmpty()) {
+		    			emp.setName(name);
+		    		}
+		    		if(!email.isEmpty()) {
+		    			emp.setEmail(email);
+		    		}
+		    		if(!phoneNumber.isEmpty()) {
+		    			emp.setNumber(phoneNumber);	
+		    		}
+		    		if(!departement.isEmpty()) {
+		    			emp.setDepartement(departement);
+		    		}
+		    		if(!poste.isEmpty()) {
+		    			emp.setPoste(poste);	
+		    		}
 		    	}
 		    }
 			request.setAttribute("emp", Acceuil.listemployee);
