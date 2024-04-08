@@ -88,7 +88,7 @@
                         <td>${employee.getNumber()}</td>
                         <td>${employee.getEmail()}</td>
                         <td>
-                        	<a href="modifierEmploye.jsp?id=${employee.getId()}" class="btn btn-info btn-sm">Modifier</a>
+                        	<a href="modifierEmploye?id=${employee.getId()}" class="btn btn-info btn-sm">Modifier</a>
                        		<a href="supprimerEmploye?id=${employee.getId()}" class="btn btn-danger btn-sm">Supprimer</a>
                     	</td>
                     </tr>

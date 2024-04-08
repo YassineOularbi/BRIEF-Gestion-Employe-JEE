@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.employe.Employee;
 
-@WebServlet("/modifierEmploye")
+@WebServlet("/ModifyEmployee")
 public class ModifyEmployee extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

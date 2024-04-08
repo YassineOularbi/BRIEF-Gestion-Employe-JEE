@@ -24,35 +24,35 @@
             <div class="form-group">
                 <label for="poste">Poste</label>
                 <select class="form-control" id="poste" name="poste" required>
-                	<option value="">Sélectionner un poste</option>
-                    <option value="1">Développeur Front-End</option>
-					<option value="2">Développeur Back-End</option>
-					<option value="3">Développeur Full Stack</option>
-					<option value="4">Ingénieur en Test Logiciel</option>
-					<option value="5">Chef de Projet Technique</option>
-					<option value="6">Architecte Logiciel</option>
-					<option value="7">Spécialiste en Sécurité Informatique</option>
-					<option value="8">Analyste en Assurance Qualité</option>
-					<option value="9">Administrateur Système et Réseaux</option>
-					<option value="10">Analyste en Business Intelligence</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="departement">Département</label>
-                <select class="form-control" id="departement" name="departement" required>
-                	<option value="">Sélectionner un département</option>
-                    <option value="1">Développement Logiciel</option>
-					<option value="2">Qualité et Tests</option>
-					<option value="3">Gestion de Projet</option>
-					<option value="4">Architecture et Innovation</option>
-					<option value="5">Sécurité des Systèmes</option>
-					<option value="6">Infrastructure et Réseaux</option>
-					<option value="7">Business Intelligence et Data Science</option>
-					<option value="8">Support Technique et Maintenance</option>
-					<option value="9">Ressources Humaines</option>
-					<option value="10">Finance et Administration</option>
-                </select>
-            </div>
+				    <option value="">Selectionner un poste</option>
+				    <option value="Developpeur Front-End">Developpeur Front-End</option>
+				    <option value="Developpeur Back-End">Developpeur Back-End</option>
+				    <option value="Developpeur Full Stack">Developpeur Full Stack</option>
+				    <option value="Ingenieur en Test Logiciel">Ingenieur en Test Logiciel</option>
+				    <option value="Chef de Projet Technique">Chef de Projet Technique</option>
+				    <option value="Architecte Logiciel">Architecte Logiciel</option>
+				    <option value="Specialiste en Securite Informatique">Specialiste en Securite Informatique</option>
+				    <option value="Analyste en Assurance Qualite">Analyste en Assurance Qualite</option>
+				    <option value="Administrateur Systeme et Reseaux">Administrateur Systeme et Reseaux</option>
+				    <option value="Analyste en Business Intelligence">Analyste en Business Intelligence</option>
+				</select>
+				</div>
+				<div class="form-group">
+				    <label for="departement">Departement</label>
+				    <select class="form-control" id="departement" name="departement" required>
+				        <option value="">Selectionner un departement</option>
+				        <option value="Developpement Logiciel">Developpement Logiciel</option>
+				        <option value="Qualite et Tests">Qualite et Tests</option>
+				        <option value="Gestion de Projet">Gestion de Projet</option>
+				        <option value="Architecture et Innovation">Architecture et Innovation</option>
+				        <option value="Securite des Systemes">Securite des Systemes</option>
+				        <option value="Infrastructure et Reseaux">Infrastructure et Reseaux</option>
+				        <option value="Business Intelligence et Data Science">Business Intelligence et Data Science</option>
+				        <option value="Support Technique et Maintenance">Support Technique et Maintenance</option>
+				        <option value="Ressources Humaines">Ressources Humaines</option>
+				        <option value="Finance et Administration">Finance et Administration</option>
+				    </select>
+           	 </div>
             <div class="form-group">
                 <label for="telephone">Numéro de téléphone</label>
                 <input type="text" class="form-control" id="telephone" name="telephone" required>
